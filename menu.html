@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>シンラ製麺 安国店 | 신라제면 안국점</title>
+<link rel="icon" type="image/png" sizes="32x32" href="신라제면.png">
+<link rel="icon" type="image/png" sizes="16x16" href="신라제면.png">
+<link rel="shortcut icon" href="신라제면.png">
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family:"Noto Sans JP", sans-serif;
+  line-height:1.6;
+  background-color:rgba(12,12,12,0.3);
+  color:#ffffff;
+}
+
+header {
+  background:#fff;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+  position:sticky; top:0; z-index:1000;
+  background-color:rgba(12,12,12,1);
+}
+.nav-container {
+  max-width:1200px;
+  margin:0 auto;
+  padding:10px 20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+.logo img { height:50px; display:block; }
+nav ul { display:flex; list-style:none; gap:20px; }
+nav a { text-decoration:none; color:#333; font-weight:bold; transition:color 0.3s; }
+nav a:hover { color:#c00; }
+
+section { max-width:1200px; margin:60px auto; padding:0 20px; }
+section h2 { text-align:center; font-size:2rem; margin-bottom:40px; color:#c00; }
+
+.menu-item { display:flex; align-items:center; gap:40px; margin-bottom:60px; background-color:rgba(12,12,12,0.3); }
+.menu-item img { width:50%; border-radius:15px; box-shadow:0 6px 20px rgba(0,0,0,0.15); transition:transform 0.3s ease; }
+.menu-item img:hover { transform:scale(1.05); }
+.menu-text { width:50%; padding:20px; background:rgba(12,12,12,0.3); border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+.menu-text h3 { margin-bottom:10px; font-size:1.4rem; color:#c00; }
+.menu-text span { display:block; margin-bottom:8px; }
+
+@media (max-width: 768px) {
+  nav ul { gap:10px; font-size:0.9rem; }
+  .menu-item { flex-direction:column; text-align:center; gap:20px; }
+  .menu-item img, .menu-text { width:100%; margin:0; }
+  .menu-text { margin-top:15px; font-size:1rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-container">
+    <div class="logo">
+      <a href="index.html"><img src="신라제면.png" alt="シンラ製麺"></a>
+    </div>
+  </div>
+</header>
+
+<section id="menu" class="menu-section">
+  <h2>おすすめメニュー</h2>
+
+  <article class="menu-item">
+    <picture><source srcset="동죽 칼국수.webp" type="image/webp"><img src="동죽 칼국수.webp" alt="アサリカルグクス | 동죽칼국수"></picture>
+    <div class="menu-text">
+      <h3><span>アサリカルグクス</span></h3>
+      <p>
+        <span>すっきりとしたスープ！たっぷり入ったアサリ！太くてもちもちの麺まで！</span>
+      </p>
+    </div>
+  </article>
+
+  <article class="menu-item">
+    <picture><source srcset="칼낙지.webp" type="image/webp"><img src="칼낙지.webp" alt="ナクチカルグクス(2人前) | 칼낙지(2인분)"></picture>
+    <div class="menu-text">
+      <h3><span>ナクチカルグクス(2人前)</span></h3>
+      <p>
+        <span>カルグクス界のヨプトッ！コクのあるスープにもちもちの麺、たっぷりのタコまで！胡椒たっぷりのトッポッキ味で、一口食べればストレスが一気に吹き飛びます！</span>
+      </p>
+    </div>
+  </article>
+
+  <article class="menu-item">
+    <picture><source srcset="비빔밥.webp" type="image/webp"><img src="비빔밥.webp" alt="ビビンバ | 비빔밥"></picture>
+    <div class="menu-text">
+      <h3><span>ビビンバ</span></h3>
+      <p>
+        <span>ナクチカルグクスを全部食べたあと、残さないで！残ったタレとナクチをビビンバに入れて混ぜると…これ以上美味しいものはありません！</span>
+      </p>
+    </div>
+  </article>
+
+  <article class="menu-item">
+    <picture><source srcset="해물파전.webp" type="image/webp"><img src="해물파전.webp" alt="海鮮ジョン | 해물파전"></picture>
+    <div class="menu-text">
+      <h3><span>海鮮ジョン</span></h3>
+      <p>
+        <span>サクサクの表面、しっとり中身、口いっぱいに広がる海の幸。</span>
+      </p>
+    </div>
+  </article>
+
+  <article class="menu-item">
+    <picture><source srcset="만두.webp" type="image/webp"><img src="만두.webp" alt="マンドゥ | 만두"></picture>
+    <div class="menu-text">
+      <h3><span>マンドゥ</span></h3>
+      <p>
+        <span>もちもちの皮に包まれた豊かな味わい、一口で微笑みが広がります。</span>
+      </p>
+    </div>
+  </article>
+
+  <article class="menu-item">
+    <picture><source srcset="감자전.webp" type="image/webp"><img src="감자전.webp" alt="ジャガイモチヂミ | 감자전"></picture>
+    <div class="menu-text">
+      <h3><span>ジャガイモチヂミ</span></h3>
+      <p>
+        <span>重なり合ったポテトの下にはサクサクのケチャップ！醤油につけても絶品です！</span>
+      </p>
+    </div>
+  </article>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>シンラ製麺 安国店 | 韓国料理・ラーメン専門店</title>
+
+<meta name="description" content="シンラ製麺 安国店 - ソウル安国で楽しむ本格韓国料理と落ち着いた日本の雰囲気のラーメン専門店。한국어: 서울 안국에서 즐기는 본격 한식과 일본풍 라멘 전문점.">
+<meta name="keywords" content="シンラ製麺, 韓国料理, ラーメン, 安国, ソウルグルメ, 신라제면, 한식, 라면, 서울맛집">
+
+<meta property="og:description" content="ソウル安国で楽しむ本格韓国料理と日本風の雰囲気。シンラ製麺公式サイト。한국어: 서울 안국에서 즐기는 본격 한식과 일본풍 라멘 전문점.">
+<meta name="twitter:description" content="ソウル安国の本格韓国料理ラーメン店。シンラ製麺 安国店。한국어: 서울 안국에서 즐기는 본격 한식과 일본풍 라멘 전문점.">
+
+<meta property="og:title" content="シンラ製麺 安国店 | 韓国料理・ラーメン専門店">
+<meta property="og:image" content="매장.webp">
+<meta property="og:url" content="https://shillajemyeon.com">
+<meta property="og:type" content="restaurant">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="シンラ製麺 安国店">
+<meta name="twitter:image" content="매장.webp">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "シンラ製麺 安国店",
+  "image": "매장.webp",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "ソウル特別市 鍾路区 桂洞キル19-6",
+    "addressCountry": "KR"
+  },
+  "telephone": "0507-1474-7402",
+  "servesCuisine": ["韓国料理","ラーメン","한식","라면"],
+  "description": "本格韓国料理と落ち着いた雰囲気のラーメン専門店。",
+  "priceRange": "¥¥",
+  "url": "https://shillajemyeon.com"
+}
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+<style>
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family:"Noto Sans JP", sans-serif;
+  font-weight:400;
+  background:#fdf7f0;
+  color:#ffffff;
+  scroll-behavior: smooth;
+}
+a {text-decoration:none; color:inherit;}
+ul {list-style:none;}
+
+header {
+  position: fixed; top:0; left:0; width:100%;
+  display:flex; justify-content:space-between; align-items:center;
+  padding:15px 60px;
+  background: rgba(12, 12, 12, 0.8);
+  box-shadow:0 4px 15px rgba(0,0,0,0.08);
+  z-index:1000;
+}
+.logo img {height:55px;}
+nav ul {display:flex;}
+nav ul li {margin-left:25px;}
+nav ul li a {font-size:16px; color:#ffffff; transition:0.3s;}
+nav ul li a:hover {color:#d67c3c;}
+.menu-button { display:none; font-size:28px; cursor:pointer; background:none; border:none; color:#d67c3c;}
+
+.hero {
+  position: relative;
+  height:70vh; width:100%;
+  background: url('매장.webp') center/cover no-repeat;
+  display:flex; justify-content:center; align-items:center;
+  text-align:center; color:white;
+}
+.hero::after {
+  content:''; position:absolute; top:0; left:0;
+  width:100%; height:100%;
+  background: rgba(0,0,0,0.4);
+  z-index:0;
+}
+.hero h1 {
+  position: relative; z-index:1;
+  font-size:2rem; line-height:1.4;
+  padding: 0 10px;
+}
+
+section {width:100%; padding:100px 20px; display:flex; flex-direction:column; align-items:center;}
+h2 {
+  text-align:center; font-size:2.2rem; margin-bottom:50px; color:#ffffff; position:relative;
+}
+h2::after {
+  content:''; display:block; width:70px; height:4px; background:#d67c3c; margin:15px auto 0;
+}
+
+#intro {background:rgba(12, 12, 12, 0.5); text-align:center;}
+#intro p {margin-bottom:12px; font-size:18px; color:#ffffff;}
+#intro a {
+  display:inline-block; padding:12px 25px; margin-top:20px;
+  background:#d67c3c; color:white; border-radius:8px; transition:0.3s;
+}
+#intro a:hover {background:#e67e22;}
+
+#menu {background:rgba(12, 12, 12, 0.2); position:relative; width:100%;}
+.menu-wrapper {position:relative; display:flex; align-items:center; justify-content:center; max-width:1000px; width:100%;}
+.menu-container {
+  display:flex;
+  overflow:hidden;
+  width:100%;
+}
+.menu-item {
+  min-width:300px;
+  flex:0 0 auto;
+  text-align:center;
+  margin:0 10px;
+  border-radius:14px;
+  background:rgba(12, 12, 12, 0.2);
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.menu-item:hover {
+  transform: translateY(-8px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.18);
+}
+.menu-item img {
+  width:100%;
+  height:200px;
+  object-fit:cover;
+  border-radius:14px 14px 0 0;
+}
+.menu-item p {
+  margin-top:10px;
+  font-size:14px;
+  font-weight:600;
+  line-height:1.3;
+  color:#ffffff;
+}
+
+.prev, .next {
+  position: absolute; top:50%; transform:translateY(-50%);
+  background: rgba(67,43,21,0.6); color:white; border:none;
+  font-size:2rem; padding:10px 15px;
+  cursor: pointer; border-radius:50%;
+  z-index:10;
+  transition: background 0.3s;
+}
+.prev:hover, .next:hover {background: rgba(67,43,21,0.9);}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+#contact, #access, #blog {text-align:center; padding:100px 20px;}
+#contact {background:rgba(12, 12, 12, 0.5);} 
+#access {background:rgba(12, 12, 12, 0.2);} 
+#blog {background:rgba(12, 12, 12, 0.5);} 
+
+footer {background:#4a3325; color:white; text-align:center; padding:40px 20px; font-size:16px;}
+
+@media(max-width:768px){
+  nav ul {display:none; flex-direction:column; position:absolute; top:70px; right:20px;
+    background:rgba(255,249,244,0.95); border-radius:10px; padding:15px; box-shadow:0 5px 20px rgba(0,0,0,0.1);}
+  nav ul.show {display:flex;}
+  .menu-button {display:block;}
+  header {padding:12px 20px;}
+  .hero {height:50vh; font-size:1.3rem; padding-top:60px;}
+  .menu-item {min-width:48%; margin:0 5px;}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><a href="index.html"><img src="신라제면.png" alt="シンラ製麺"></a></div>
+  <button class="menu-button" onclick="toggleMenu()">☰</button>
+  <nav>
+    <ul id="nav-menu">
+      <li><a href="intro.html">紹介</a></li>
+      <li><a href="menu.html">メニュー</a></li>
+      <li><a href="#contact">お問い合わせ</a></li>
+      <li><a href="#access">アクセス</a></li>
+      <li><a href="#blog">ブログ</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>安らぎの空間で、本格韓国料理を</h1>
+</div>
+
+<section id="intro">
+  <h2>紹介</h2>
+  <p>まるで隠れ家のような上質な空間で、韓国の味をゆったり楽しむ。</p>
+  <p>シンラ製麺の厳選された料理を、落ち着いた雰囲気の中で堪能。</p>
+  <a href="intro.html">詳細を見る</a>
+</section>
+
+<section id="menu">
+  <h2>メニュー</h2>
+  <div class="menu-wrapper">
+    <button class="prev">←</button>
+    <div class="menu-container">
+      <div class="menu-item">
+        <a href="menu.html"><picture><source srcset="동죽 칼국수.webp" type="image/webp"><img src="동죽 칼국수.webp" alt="アサリカルグクス"></picture></a>
+        <p>アサリカルグクス<br>貝の旨味が広がる上品な味わい</p>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html"><picture><source srcset="칼낙지.webp" type="image/webp"><img src="칼낙지.webp" alt="ナクチカルグクス(2人前)"></picture></a>
+        <p>ナクチカルグクス(2人前)<br>ピリ辛の刺激がクセになる一皿</p>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html"><picture><source srcset="비빔밥.webp" type="image/webp"><img src="비빔밥.webp" alt="ビビンバ"></picture></a>
+        <p>ビビンバ<br>彩り豊かで、目でも楽しめる伝統の味</p>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html"><picture><source srcset="해물파전.webp" type="image/webp"><img src="해물파전.webp" alt="海鮮ジョン"></picture></a>
+        <p>海鮮ジョン<br>香ばしく焼き上げた海の恵み</p>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html"><picture><source srcset="만두.webp" type="image/webp"><img src="만두.webp" alt="マンドゥ"></picture></a>
+        <p>マンドゥ<br>ジューシーで小ぶりな幸せ</p>
+      </div>
+      <div class="menu-item">
+        <a href="menu.html"><picture><source srcset="감자전.webp" type="image/webp"><img src="감자전.webp" alt="ジャガイモチヂミ"></picture></a>
+        <p>ジャガイモチヂミ<br>ほくほくの食感と優しい香り</p>
+      </div>
+    </div>
+    <button class="next">→</button>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>お問い合わせ</h2>
+  <p>ご予約・お問い合わせはお電話で承ります</p>
+  <a href="https://www.instagram.com/shillajemyeon_anguk?igsh=Y21sYnJrYWZ2bG54" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="40" height="40" fill="#E4405F">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 
+        114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 
+        141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 
+        74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 
+        74.7zm146.4-194.3c0 14.9-12 26.9-26.9 
+        26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 
+        26.9-26.9 26.9 12 26.9 26.9zm76.1 
+        27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 
+        0-35.9 1.7-67.7 9.9-93.9 
+        36.2-26.2 26.2-34.4 58-36.2 
+        93.9-2.1 37-2.1 147.9 0 184.9 1.7 
+        35.9 9.9 67.7 36.2 93.9 26.2 26.2 
+        58 34.4 93.9 36.2 37 2.1 147.9 
+        2.1 184.9 0 35.9-1.7 67.7-9.9 
+        93.9-36.2 26.2-26.2 34.4-58 
+        36.2-93.9 2.1-37 2.1-147.9 
+        0-184.9zM398.8 388c-7.8 
+        19.6-22.9 34.7-42.6 
+        42.6-29.5 11.7-99.5 9-132.1 
+        9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+        9-132.1c7.8-19.6 22.9-34.7 
+        42.6-42.6 29.5-11.7 99.5-9 
+        132.1-9s102.7-2.6 132.1 
+        9c19.6 7.8 34.7 22.9 42.6 
+        42.6 11.7 29.5 9 99.5 9 
+        132.1s2.7 102.7-9 
+        132.1z"/>
+      </svg>
+    </a>
+</section>
+
+<section id="access">
+  <h2>アクセス</h2>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0130942386763!2d126.98139648924835!3d37.578309351359756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca30c6dd2573f%3A0xc2700c7802938b57!2z7JWI6rWt7JetIOunm-ynkSDsi6DrnbzsoJzrqbQg7JWI6rWt7KCQ44WjU2VvdWwgS29yZWFuIHJlc3RhdXJhbnQgc2lucmFqZW15ZW9u44Wj6Z-T5Zu95paZ55CGIOODrOOCueODiOODqeODsyDpo7Lpo5_lupcg5paw576F6KO96bq644Wj44Kr44Or44Kw44Kv44K5IOe-jumjnw!5e0!3m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p>ソウル特別市 鍾路区 桂洞キル19-6 1階</p>
+</section>
+
+<section id="blog">
+  <h2>ブログ</h2>
+  <p>最新情報を掲載しています</p>
+  <div class="blog">
+    <a href="https://www.instagram.com/shillajemyeon_anguk?igsh=Y21sYnJrYWZ2bG54" target="_blank">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="40" height="40" fill="#E4405F">
+        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 
+        114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 
+        141zm0 189.6c-41.2 0-74.7-33.5-74.7-74.7s33.5-74.7 
+        74.7-74.7 74.7 33.5 74.7 74.7-33.5 74.7-74.7 
+        74.7zm146.4-194.3c0 14.9-12 26.9-26.9 
+        26.9-14.9 0-26.9-12-26.9-26.9s12-26.9 
+        26.9-26.9 26.9 12 26.9 26.9zm76.1 
+        27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 
+        0-35.9 1.7-67.7 9.9-93.9 
+        36.2-26.2 26.2-34.4 58-36.2 
+        93.9-2.1 37-2.1 147.9 0 184.9 1.7 
+        35.9 9.9 67.7 36.2 93.9 26.2 26.2 
+        58 34.4 93.9 36.2 37 2.1 147.9 
+        2.1 184.9 0 35.9-1.7 67.7-9.9 
+        93.9-36.2 26.2-26.2 34.4-58 
+        36.2-93.9 2.1-37 2.1-147.9 
+        0-184.9zM398.8 388c-7.8 
+        19.6-22.9 34.7-42.6 
+        42.6-29.5 11.7-99.5 9-132.1 
+        9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 
+        9-132.1c7.8-19.6 22.9-34.7 
+        42.6-42.6 29.5-11.7 99.5-9 
+        132.1-9s102.7-2.6 132.1 
+        9c19.6 7.8 34.7 22.9 42.6 
+        42.6 11.7 29.5 9 99.5 9 
+        132.1s2.7 102.7-9 
+        132.1z"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 シンラ製麺 安国店. All Rights Reserved.</p>
+</footer>
+
+<script>
+function toggleMenu(){
+  const menu = document.getElementById('nav-menu');
+  menu.classList.toggle('show');
+}
+
+const container = document.querySelector('.menu-container');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+let scrollAmount = 0;
+const scrollPerClick = 320;
+
+prev.addEventListener('click', () => {
+  container.scrollBy({left: -scrollPerClick, behavior: 'smooth'});
+});
+next.addEventListener('click', () => {
+  container.scrollBy({left: scrollPerClick, behavior: 'smooth'});
+});
+</script>
+
+</body>
+</html>
+
