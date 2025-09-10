@@ -163,9 +163,25 @@ footer {background:#4a3325; color:white; text-align:center; padding:40px 20px; f
   .menu-button {display:block;}
   header {padding:12px 20px;}
   .hero {height:50vh; font-size:1.3rem; padding-top:60px;}
-  .menu-item {min-width:48%; margin:0 5px;}
+
+  .menu-container {
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    -webkit-overflow-scrolling:touch;
+    gap:15px;
+    padding-bottom:10px;
+  }
+  .menu-container::-webkit-scrollbar {display:none;}
+  .menu-item {
+    flex:0 0 100%;
+    scroll-snap-align:start;
+    min-width:auto;
+    margin:0;
+  }
 }
 </style>
+
 </head>
 <body>
 
