@@ -157,8 +157,25 @@ h2::after {
 footer {background:#4a3325; color:white; text-align:center; padding:40px 20px; font-size:16px;}
 
 @media(max-width:768px){
-  nav ul {display:none; flex-direction:column; position:absolute; top:70px; right:20px;
-    background:rgba(255,249,244,0.95); border-radius:10px; padding:15px; box-shadow:0 5px 20px rgba(0,0,0,0.1);}
+  nav ul {
+    display:none;
+    flex-direction:column;
+    position:absolute;
+    top:70px;
+    right:0px;
+    left:auto;
+    margin:0;
+    background:rgba(255,249,244,0.95);
+    border-radius:10px;
+    padding:10px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    width:120px;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  nav ul li {
+    margin:0px 0;
+  }
+
   nav ul.show {display:flex;}
   .menu-button {display:block;}
   header {padding:12px 20px;}
@@ -169,18 +186,15 @@ footer {background:#4a3325; color:white; text-align:center; padding:40px 20px; f
     overflow-x:hidden;
     scroll-snap-type:x mandatory;
     -webkit-overflow-scrolling:touch;
-    gap:15px;
+    gap:0;
     padding-bottom:10px;
   }
   .menu-container::-webkit-scrollbar {display:none;}
   .menu-item {
     flex:0 0 100%;
     scroll-snap-align:start;
-    min-width:auto;
+    min-width:100%;
     margin:0;
-  }
-   header {
-    padding: 12px 20px;
   }
 }
 </style>
@@ -285,7 +299,7 @@ footer {background:#4a3325; color:white; text-align:center; padding:40px 20px; f
 
 <section id="access">
   <h2>アクセス</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0130942386763!2d126.98139648924835!3d37.578309351359756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca30c6dd2573f%3A0xc2700c7802938b57!2z7JWI6rWt7JetIOunm-ynkSDsi6DrnbzsoJzrqbQg7JWI6rWt7KCQ44WjU2VvdWwgS29yZWFuIHJlc3RhdXJhbnQgc2lucmFqZW15ZW9u44Wj6Z-T5Zu95paZ55CGIOODrOOCueODiOODqeODsyDpo7Lpo5_lupcg5paw576F6KO96bq644Wj44Kr44Or44Kw44Kv44K5IOe-jumjnw!5e0!3m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.0130942386763!2d126.98139648924835!3d37.578309351359756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca30c6dd2573f%3A0xc2700c7802938b57!2z7JWI6rWt7JetIOunm-ynkSDsi6DrnbzsoJzrqbQg7JWI6rWt7KCQ44WjU2VvdWwgS29yZWFuIHJlc3RhdXJhbnQgc2lucmFqZW15ZW9u44Wj6Z-T5Zu95paZ55CGIOODrOOCueODiOODqeODsyDpo7Lpo5_lupcg5paw576F6KO96bq644Wj44Kr44Or44Kw44Kv44K5IOe-jumjnw!5e0!3m2!1sko!2skr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
   <p>ソウル特別市 鍾路区 桂洞キル19-6 1階</p>
 </section>
 
